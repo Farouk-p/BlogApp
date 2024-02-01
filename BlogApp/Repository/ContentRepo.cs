@@ -79,7 +79,7 @@ namespace BlogApp.Repository
 
             _context.contents.Remove(SingleContent);
             _context.SaveChanges();
-            return "Deleted Successfully";
+            return "Deleted Successfullyss";
         }
 
 
