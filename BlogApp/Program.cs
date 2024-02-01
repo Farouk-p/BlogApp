@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 IHost host = Host.CreateDefaultBuilder(args).Build();
 IConfiguration config = host.Services.GetRequiredService<IConfiguration>();
-var cnn = config.GetSection("ConnectionString").Value;
+var cnn = config.GetSection("ConnectionStringss").Value;
 builder.Services.AddDbContext<BlogAppDbContext>(a => a.UseSqlServer(cnn));
 
 var app = builder.Build();

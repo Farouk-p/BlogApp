@@ -20,7 +20,7 @@ namespace BlogApp.Controllers
         {
             var service = new ContentRepo(_context);
             var response = await service.AddContent(req);
-            return Ok("Content addedd successfully");
+            return Ok("Content addedd successfullyss");
         }
 
         [HttpGet("GetAllContent")]
